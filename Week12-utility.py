@@ -4,3 +4,8 @@
 
 def PrintOutput(word):
     print('OUTPUT', word)
+
+def LoadFile(filename):
+    with open(filename,'r+') as f:
+        lines = f.readlines()
+    print(lines)

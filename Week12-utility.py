@@ -19,3 +19,10 @@ def UpdateString(string1, string2, num):
     for n in list1:
         final += n
     print(final)
+
+def FindWordCount(a_list, a_string):
+    count = 0
+    for i in a_list:
+        if i == a_string:
+            count += 1
+    print('OUTPUT',count)

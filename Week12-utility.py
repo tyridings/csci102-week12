@@ -41,3 +41,18 @@ def Union(list1,list2):
         if i not in list1:
             list1.append(i)
     return list1
+
+def Intersection(list_a, list_b):
+    inters = []
+    for i in list_a:
+        if i in list_b:
+            inters.append(i)
+    return inters
+
+def NotIn(list_1, list_2):
+    final = []
+    for i in list_1:
+        if i not in list_2:
+            final.append(i)
+    return final
+

@@ -25,7 +25,7 @@ def FindWordCount(a_list, a_string):
     for i in a_list:
         if i == a_string:
             count += 1
-    print('OUTPUT',count)
+    return count
 
 def ScoreFinder(str_list,float_list, name):
     f = 0
@@ -36,3 +36,8 @@ def ScoreFinder(str_list,float_list, name):
     if f == 0:
         print('player not found')
             
+def Union(list1,list2):
+    for i in list2:
+        if i not in list1:
+            list1.append(i)
+    return list1
